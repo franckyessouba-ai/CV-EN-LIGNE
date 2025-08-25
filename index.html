@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - NLEMEGNEME ESSOUBA Emmanuel Francky</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="CV en ligne de NLEMEGNEME ESSOUBA Emmanuel Francky, étudiant en Génie Informatique spécialisé en cybersécurité.">
+  <meta name="keywords" content="CV, cybersécurité, informatique, Libreville, étudiant, développement web, réseaux">
+  <meta name="author" content="NLEMEGNEME ESSOUBA Emmanuel Francky">
+
   <style>
     body {
       margin: 0;
@@ -68,6 +74,19 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    .download-btn {
+      display: inline-block;
+      background: #0984e3;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #6c5ce7;
+    }
     footer {
       background: #2d3436;
       color: white;
@@ -75,11 +94,28 @@
       padding: 15px;
       margin-top: 40px;
     }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      main {
+        padding: 20px 10px;
+      }
+      .download-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Tu peux remplacer cette image par ta vraie photo -->
+    <!-- Remplace cette image par ta vraie photo -->
     <img src="https://via.placeholder.com/140" alt="Photo de profil">
     <h1>NLEMEGNEME ESSOUBA Emmanuel Francky</h1>
     <p>🎓 Étudiant en Génie Informatique, option Cybersécurité</p>
@@ -104,14 +140,22 @@
     </section>
 
     <section>
+      <h2>Projets</h2>
+      <ul>
+        <li>🔒 Mise en place d’un pare-feu sous Linux pour sécuriser un réseau local</li>
+        <li>🌐 Création d’un site web personnel en HTML/CSS/JS</li>
+        <li>📡 Simulation d’attaque et défense dans un environnement virtuel</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Compétences</h2>
       <ul>
         <li>🔐 Cybersécurité : protection des systèmes et réseaux</li>
-        <li>💻 Développement Web (HTML, C, C++ CSS, JavaScript)</li>
+        <li>💻 Développement Web (HTML, CSS, JavaScript)</li>
         <li>⚙️ Systèmes & Réseaux (Windows, Linux, administration)</li>
         <li>📊 Analyse et résolution de problèmes informatiques</li>
         <li>🧠 Apprentissage rapide et veille technologique</li>
-        <li>🗄️ Base de données (MySQL, PostgreSQL, MongoDB)</li>
       </ul>
     </section>
 
@@ -131,6 +175,10 @@
       <p>📧 Email : <a href="mailto:essoubaemmanuelfrancky@gmail.com">essoubaemmanuelfrancky@gmail.com</a></p>
       <p>🌍 Adresse : Libreville, PK11 - Gabon</p>
     </section>
+
+    <section style="text-align:center;">
+      <a href="cv_emmanuel_francky.pdf" download class="download-btn">📄 Télécharger mon CV en PDF</a>
+    </section>
   </main>
 
   <footer>
@@ -138,3 +186,4 @@
   </footer>
 </body>
   </html>
+    
